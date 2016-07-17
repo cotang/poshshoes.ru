@@ -1,0 +1,25 @@
+.content{
+	width: 100%;
+	max-width: @screen-lg;
+	margin: 0 auto;	
+	font-family: @prosto;
+	color: @text-color;
+
+	&__collection{
+		font-size: 0;
+	}
+	&__inner{
+		padding: 50px 20px;
+		&--about-us{
+			padding-bottom: 0;
+		}
+	}
+	
+	@media screen and (max-width: @screen-sm-max) {
+		max-width: @screen-sm;
+	}	
+	@media screen and (max-width: @screen-xs-max) {
+		max-width: @screen-xs;
+	}
+}
+

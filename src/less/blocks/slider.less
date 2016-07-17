@@ -1,0 +1,30 @@
+.slider{
+	width: 100%;
+	max-width: @screen-lg;
+	margin: 0 auto;
+	margin-top: 50px;
+
+	@media screen and (max-width: @screen-xs-max) {
+		display: none;
+	}
+
+	&__inner{
+		padding: 0 30px;
+		font-size: 0;
+		overflow-y: hidden; /* убрать потом*/
+		height: 200px; /* убрать потом */
+	}
+
+	&__img{
+		width: 200px;
+		height: 200px;
+		display: inline-block;
+
+		img{
+			width: 100%;
+			height: 100%;
+			display: block;
+			object-fit: cover;
+		}
+	}
+}

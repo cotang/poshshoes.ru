@@ -1,0 +1,76 @@
+.item{
+	display: inline-block;
+	width: 50%;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+
+	@media screen and (max-width: @screen-sm-max) {
+		width: 100%;
+	}
+	&__title{
+		font-size: 1rem;
+		font-family: @prosto;
+	}
+	&__pic-wrapper{
+		display: inline-block;
+		vertical-align: middle;
+		width: 300px;
+		height: 250px;
+		background-image: url(../img/ramka.png);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		position: relative;
+
+		@media screen and (max-width: @screen-xs-max) {
+			display: block;
+			margin: 0 auto;
+		}		
+	}
+
+	&__img{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 180px;
+		height: 180px;
+
+		// @media screen and (max-width: @screen-sm-max) {
+		// 	width: 120px;
+		// 	height: 120px;
+		// }		
+
+		img{
+			width: 100%;
+			height: 100%;
+			display: block;
+			object-fit: cover;		
+		}
+	}
+	&__buttons{
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 25px;
+
+		@media screen and (max-width: @screen-xs-max) {
+			display: block;
+			margin: 20px auto;
+		}		
+	}
+	&__icon{
+		display: block;
+		margin: 25px 0;
+
+		@media screen and (max-width: @screen-xs-max) {
+			display: inline-block;
+			margin: 0 20px;
+		}		
+
+		svg{
+			width: 40px;
+			height: 40px;
+		}
+	}
+}
+

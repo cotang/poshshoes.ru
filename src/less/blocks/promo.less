@@ -1,0 +1,40 @@
+.promo{
+	width: 100%;
+	max-width: @screen-lg;
+	margin: 0 auto;
+	display: flex;
+	margin-top: 30px;
+
+	@media screen and (max-width: @screen-xs-max) {
+		display: block;
+	}	
+
+	&__img{
+		width: 33.3333%;
+		height: 500px;
+
+		@media screen and (max-width: @screen-sm-max) {
+			height: 400px;
+		}		
+
+		@media screen and (max-width: @screen-xs-max) {
+			width: 100%;
+			height: 500px;
+		}
+
+		img{
+			width: 100%;
+			height: 100%;
+			display: block;
+			object-fit: cover;
+		}
+	}
+
+	&--about-us{
+		.promo__img{
+			// width: 33.3333%;
+			height: 350px;
+		}
+	}
+}
+

@@ -1,0 +1,137 @@
+.page-header{
+	width: 100%;
+	max-width: @screen-lg;
+	margin: 0 auto;
+	padding-top: 20px;
+	color: @menu-color;
+
+	&__nav{
+		margin-top: 30px;
+
+		@media screen and (max-width: @screen-sm-max) {
+			margin-top: 0;
+		}
+	}
+
+	@media screen and (max-width: @screen-sm-max) {
+		max-width: @screen-sm;
+	}	
+	@media screen and (max-width: @screen-xs-max) {
+		max-width: @screen-xs;
+	}	
+		
+}
+.social{
+
+	&__list{
+		padding-left: 0;
+		margin: 0 auto;
+		max-width: 50%;
+		display: flex;
+		justify-content: space-between;
+
+		@media screen and (max-width: @screen-xs-max) {
+			max-width: 100%;
+		}		
+	}
+	&__item{
+		display: inline-flex;
+
+		@media screen and (max-width: @screen-sm-max) {
+			margin: 0 20px;
+		}		
+	}
+	&__link{
+		svg{
+			height: 30px;
+			width: 30px;
+		}
+	}
+}
+
+.nav{
+	font-family: @prosto;
+	text-align: center;
+	position: relative;
+
+	&__list{
+		padding-left: 0;		
+		position: absolute;
+		top: 90px;
+		margin: 0 auto;
+		
+
+		&--left{
+			left: 0;
+
+			@media screen and (max-width: @screen-sm-max) {
+				top: 200px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 200%;
+				max-width: 100vw;
+			}
+			@media screen and (max-width: @screen-xs-max) {
+				top: 180px;
+			}
+
+			.nav__item{
+				margin-left: 10px;
+				margin-right: 10px;
+
+				@media screen and (max-width: @screen-sm-max) {
+					margin-right: 15px;
+					margin-left: 15px;
+				}				
+			}
+		}
+		&--right{
+			right: 0;
+
+			@media screen and (max-width: @screen-sm-max) {
+				top: 250px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 200%;
+				max-width: 100vw;
+			}
+			@media screen and (max-width: @screen-xs-max) {
+				top: 300px;
+			}
+
+			.nav__item{
+				margin-right: 10px;
+				margin-left: 50px;
+
+				@media screen and (max-width: @screen-sm-max) {
+					margin-right: 15px;
+					margin-left: 15px;
+				}
+			}
+		}
+	}
+	&__item{
+		display: inline-block;
+		vertical-align: baseline;
+		text-transform: uppercase;
+
+		@media screen and (max-width: @screen-xs-max) {
+			display: block;
+			padding: 10px 0;
+		}
+
+	}
+	&__logo{		
+		svg{
+			width: 200px;
+			height: 200px;
+		}
+
+		@media screen and (max-width: @screen-sm-max) {
+			margin-bottom: 100px;
+		}	
+		@media screen and (max-width: @screen-xs-max) {
+			margin-bottom: 230px;
+		}			
+	}
+}

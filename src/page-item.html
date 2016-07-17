@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Posh shoes</title>
+<meta name="description" content="">
+@@include('_html_inc/page_head.html')
+</head>
+
+<body class="page-item">
+
+@@include('_html_inc/page_header.html')
+
+	<h1 class="page-item__title">Модель №1</h1>
+
+	<div class="page-item__inner">
+		<div class="page-item__gallery  gallery">
+			<div class="gallery__main">
+				<img src="img/01.jpg" height="900" width="600" alt="">
+			</div>
+			<div class="gallery__thumbnails">
+				<div class="gallery__thumbnail-img">
+					<img src="img/01.jpg" alt="">
+				</div>
+				<div class="gallery__thumbnail-img">
+					<img src="img/02.jpg" alt="">
+				</div>
+				<div class="gallery__thumbnail-img">
+					<img src="img/03.jpg" alt="">
+				</div>
+			</div>
+			<a href="#" class="gallery__present">Подари меня!</a>
+		</div>
+
+		<div class="page-item__details">
+			<div class="tabs">
+			
+				<input type="radio" class="tabs__input" name="tab" id="tab1">
+				<input type="radio" class="tabs__input" name="tab" id="tab2" checked>
+
+				<label for="tab1" class="tabs__label">Описание</label>
+				<label for="tab2" class="tabs__label">Заказать</label>
+
+				<div class="tabs__tab description">
+					<ul class="description__list">
+						<li class="description__item  description__item--price">
+							<span class="description__title">Цена:</span>
+							<span class="description__value">7500p</span>
+						</li>
+						<li class="description__item  description__item--material">
+							<span class="description__title">Материал:</span>
+							<span class="description__value">замша</span>
+						</li>
+					</ul>
+					<ul class="description__comments">
+						<li class="description__comments-item">
+							<svg><use xlink:href="#desc01"></use></svg>
+							<span>По вашим размерам</span>
+						</li>
+						<li class="description__comments-item">
+							<svg><use xlink:href="#desc02"></use></svg>
+							<span>Индивидуальный подход</span>
+						</li>
+						<li class="description__comments-item">
+							<svg><use xlink:href="#desc03"></use></svg>
+							<span>Быстрая доставка</span>
+						</li>
+					</ul>
+				</div>
+			
+				<div class="tabs__tab order">
+					<form action="">
+						<div class="order__item  order__item--customer">
+							<div>Ваше ФИО</div>
+							<input type="text" name="customer">
+						</div>
+						<div class="order__details">
+							<div class="order__details-item">
+								<div>Длина стопы</div>
+								<svg><use xlink:href="#foot01"></use></svg>
+								<label><input type="number" name="dlina-stopy">см</label>
+							</div>
+							<div class="order__details-item">
+								<div>Обхват пучков</div>
+								<svg><use xlink:href="#foot02"></use></svg>
+								<label><input type="number" name="obhvat-puchkov">см</label>
+							</div>
+							<div class="order__details-item">
+								<div>Обхват подъема</div>
+								<svg><use xlink:href="#foot03"></use></svg>
+								<label><input type="number" name="obhvat-podyoma">см</label>
+							</div>
+							<div class="order__details-item">
+								<div>Обхват пучков</div>
+								<svg><use xlink:href="#foot03"></use></svg>
+								<label><input type="number" name="chto-to-esche">см</label>
+							</div>
+						</div>
+						<a class="order__details-link" href="">Как правильно определить размер ноги?</a>
+						<div class="order__color">
+							<div>Цвет</div>
+							<select name="color" id="">
+								<option value="black">Черный</option>
+								<option value="white">Белый</option>
+								<option value="brown">Коричневый</option>
+							</select>
+						</div>
+						<div class="order__item  order__item--email">
+							<div>E-mail</div>
+							<input type="text" name="email">
+						</div>
+						<div class="order__item  order__item--tel">
+							<div>Телефон</div>
+							<input type="text" name="tel">
+						</div>	
+						<div class="order__item  order__item--address">
+							<div>Адрес доставки</div>
+							<textarea name="address" id="" cols="30" rows="8"></textarea>	
+						</div>	
+						<div class="order__item  order__item--comments">
+							<div>Комментарий к заказу</div>
+							<textarea name="comments" id="" cols="30" rows="8"></textarea>	
+						</div>	
+						<button class="order__button">Заказать</button>										
+					</form>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+
+	<div class="page-item__payment  payment">
+		<h2 class="payment__title">Оплата</h2>
+		<div class="content">
+			<p>Оплата заказа производится в два этапа:</p>
+			<p>50% предоплата</p>
+			<p>50% после получения заказа.</p>
+			<p>Оплатить можно переводом на карту сбербанка (если вы проживаете в Спб, то возможен наличный расчет).</p>
+			<p>Реквизиты для перевода:</p>
+		</div>
+	</div>
+
+
+@@include('_html_inc/page_footer.html')
+@@include('_html_inc/page_bottom.html')
+
+</body>
+</html>
